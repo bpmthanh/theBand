@@ -1,0 +1,580 @@
+/*Common*/
+
+/* Reset CSS------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: left;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text-white{
+    color:#fff !important;
+}
+
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-tree{
+    width: 33.33%;
+}
+
+.col-two{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+/*Main*/
+
+/*-------------------------------------------------------*/
+/*Nav------------------*/
+.active:hover .subnav{
+    background-color: rgb(59, 5, 5);
+}
+
+#header{
+    background-color: #000;
+    height: 46.5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    /* Mobile responsive */
+    /* overflow: hidden; */
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li{
+    display:inline-block; 
+    position: relative;
+    box-shadow: 0 0 15px 6px rgba(122, 121, 121, 0.226);
+} 
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 46.5px;
+    font-size: 15; 
+    padding: 14.5px 24px;
+}
+
+#nav > li:hover > a{
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li:hover{
+    background-color: #ccc;
+    color: #000;
+    
+}
+
+#nav .subnav{
+    display:none;
+    position: absolute;
+    list-style-type: none;
+    background-color: #fff;
+    box-shadow: 0 0 15px 6px rgba(122, 121, 121, 0.226);
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a{
+    text-decoration: none;
+    color: black;    
+    display: block;
+    line-height: 22.5px;
+    padding: 8px 16px;
+    min-width: 160px;
+}
+
+/*Icon*/
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+
+#header .mobile-menu-bt{
+    color: #fff;
+    font-size: 20px;
+    float: right;
+    line-height: 46.5px;
+
+    display:none;
+}
+
+#header .menu-icon{
+    padding: 16px 24px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+#header .search-bt{
+    color: #fff;
+    font-size: 20px;
+    float: right;
+    line-height: 46.5px;
+}
+
+#header .search-icon{
+    padding: 16px 24px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#header .search-icon:hover{
+    background-color: red;
+}
+/*-------------------------------------------------------*/
+
+/*Slider------------------*/
+#slider{
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background-image:url('../../img/slider/slider1.jpg');
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-size: contain;
+    position: relative;
+    font-family: 'Segoe UI',Arial,sans-serif; 
+}
+
+.slider-background{
+   
+    width: 100%;
+}
+
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 47px; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Segoe UI',Arial,sans-serif; 
+}
+
+#slider .text-heading{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+#slider .text-description{
+    font-weight: bolder;
+    margin: 15px 0px;
+    text-shadow: 0 0 1px #000;
+}
+/*-------------------------------------------------------*/
+
+/*Content------------------*/
+
+/*About*/
+#content .content-section{
+    width: 800px;
+
+    /* - Nếu màn hình lớn hơn 800px thì nó sẽ ăn theo max-width:100%
+       + Chẳng hạn như width 850px thì max-width: 850px
+
+       - Nếu màn hình bé hơn 800px thì nó sẽ ăn theo max-width:100%
+       + Chẳng hạn như width 768px thì max-width: 768px
+    */
+    max-width: 100%;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .section-heading{
+    line-height: 45px;
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.55;
+}
+
+#content .about-text{
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+/*Pictute*/
+#content .member-list{
+    padding: 48px 0;   
+}
+
+.text-center{
+    text-align: center!important;
+}
+
+#content .member-name{
+    margin: 15px 0; 
+    font-size: 15px; 
+}
+
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+
+/*Tour section------------------*/
+.tour-section{
+    background-color: #000;
+
+}
+/*Tickets*/
+.ticket-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.ticket-list li{
+    padding: 8px 16px;
+    font-size: 15px;
+    /* margin-bottom: 1px; */
+    list-style-type: none;
+    border: 1px solid #ddd;
+    color: #757575;
+}
+
+.ticket-list .sold-out{
+    margin-top: 40px;
+    background-color: #f44336;
+    padding: 3px 8px;
+    color: #fff;
+    margin-left: 16px;
+    
+}
+
+.ticket-list .quantity{
+    color: #fff;
+    background-color: #000;
+    float: right;
+    border-radius: 50%;
+    margin-right: 16px;
+    width: 24.7px;
+    height: 22.5px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: -2px;
+}
+
+/*Place list*/
+
+.place-list{
+    padding: 48px 0;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.60;
+}
+
+.place-body{
+    padding: 0.15px 16px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-weight: 700px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.place-time{
+    margin: 15px 0;
+    opacity: 0.60;
+}
+
+.place-desc{
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.place-buy-button{
+    margin-bottom: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #000;
+    display: inline-block;
+    border: none;
+    text-align: center;
+}
+
+.place-buy-button:hover{
+    background-color: #ccc;
+    color: black;
+}
+/*Modal---------------------------------------------------*/
+
+/*Header------------------*/
+.modal.open{
+    display: flex;
+}
+
+.modal{
+    padding-top: 100px;
+    display: none;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.modal-container{
+    max-width: calc(100% - 32px);
+    width: 900px;
+    background-color: #fff;
+    min-height: 200px;
+    position: relative;  
+    animation: modalFadeIn ease 0.3s;
+}
+
+.modal-header{
+    font-weight: 400;
+    letter-spacing: 4px;
+    background-color: #009688;
+    padding: 32px 16px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: #fff; 
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.ti-bag::before{
+    margin-right: 16px;
+    display: inline-block;
+    line-height: 45px;
+}
+
+.ti-bag{
+    margin: 10px 0px;
+}
+
+.modal-close{
+    background-color: #009688;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    line-height: 36px;
+    padding: 8px 16px;
+    cursor:pointer;
+}
+
+
+.modal-close:hover{
+    background-color: #ccc;
+    color: #000;
+}
+/*Body------------------*/
+.modal-body{
+
+    position: relative;
+    background-color: #fff;
+    padding: 0 16px;
+}
+
+.model-label{
+    display: block;
+    margin: 15px 0; 
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+}
+
+#buy-ticket{
+    text-transform:uppercase;
+    background-color: #009688;
+    color:#fff;
+    font-size: 15px;
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+    font-weight: 500;
+    border: none;
+}
+
+#buy-ticket:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.close{
+    color: #fff;
+    background-color: #F44336;
+    padding: 8px 16px;
+    margin: 16px 0;
+    border: none;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+}
+
+.close:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-footer{
+    display: block;
+    float: right;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.modal-footer-help{
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from{transform: translateY(-100px);}
+    to{transform: translateY(0);}
+}
+
+/*----------------------------------------------------------*/
+/*Contact------------------*/
+.contact-content{
+    padding: 32px 0;
+}
+
+.contact-info{
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    line-height:1.5;
+    font-weight: 540;
+}
+
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control,
+.form-email{
+    font-size: 15px;
+}
+
+.contact-message{
+    margin: 8px 0;
+}
+
+.contact-send{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 16px 0;
+    font-size: 15px;
+    -webkit-appearance: none; /*Bỏ đi css mặc định của thẻ do trình duyệt safari up vào chrome vẫn hiểu*/
+}
+
+.contact-send:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor:pointer;
+}
+
+/*----------------------------------------------------------*/
+/*Footer------------------*/
+.map-section img{
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+/*----------------------------------------------------------*/
+/*Footer------------------*/
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 15px;    
+    color: rgba(0,0,0,0.6);
+}
+
+.social-list > a,
+.social-list i{
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    font-size: 24px;
+}
+
+.social-list i:hover{
+    opacity: 0.6;
+    cursor:auto;
+}
+
+
+.copyright a{
+    color: rgba(0,0,0,0.6);
+}
+
+.copyright{
+    margin: 15px 0;
+}

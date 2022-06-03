@@ -1,0 +1,145 @@
+/* Mobile <740*/
+@media screen and (max-width:739px) {
+    #header{
+        position: fixed;
+        overflow: hidden;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+        box-shadow: none;
+    }
+
+    #nav > li > a{
+        padding: 12.75px 24px;
+        display: block;
+        line-height: 23px;
+    }
+
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 13px 40px;
+    }
+
+    #header .search-bt {
+        display: none;
+    }
+
+    #header .mobile-menu-bt{
+        display:block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #header .menu-icon:hover{
+        background-color: #ccc;
+        color: #000;
+    }
+    
+    #nav > li:hover{
+        background-color: #ccc;
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    /*-----------------------------------------------------*/
+    
+    .col-tree{
+        float: none;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    #content .member-img{
+        width: 60%;
+    }
+
+    .col-two{
+        float: none;
+        width: 100%;
+    }
+
+    .contact-info {
+        margin-bottom: 16px;
+    }
+
+    .modal-input{
+        margin: 8px 0;
+    }
+
+    .s-full-width{
+        width:100% !important;
+    }
+}
+
+/* Tablet 740-~1024*/
+@media screen and (max-width:1025px) and (min-width:740px) {
+    .place-body .place-buy-button{
+        padding: 16px 16px;
+        width: 100%;
+    }
+
+    .m-full-width{
+        width:100% !important;
+    }
+    
+    .contact-send{
+        padding: 16px 16px;
+    }
+
+    .social-list > a, .social-list i {
+        font-size: 50px;
+        margin: 0 8px;
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+        
+    }
+
+    #footer .copyright{
+        font-size: 30px;
+    }
+
+    .contact-info {
+        font-size: 22px;
+        line-height: 2;
+    } 
+
+    .contact-hover {
+        color: #008dff;
+    }
+
+    .contact-hover:hover {
+        color: #1238c3;
+    }
+
+    
+}
+
+@media screen and (max-width:1025px){
+    .contact-submit-btn{
+        font-size: 18px;
+    }
+
+    .contact-form .form-control, .form-email, .contact-message {
+        font-size: 16px;
+    }
+
+    #nav > li{
+        box-shadow: none;
+    } 
+}
