@@ -70,8 +70,11 @@ html{
 #nav > li{
     display:inline-block; 
     position: relative;
-    box-shadow: 0 0 15px 6px rgba(122, 121, 121, 0.226);
 } 
+
+#nav > .subnav{
+    box-shadow: 0 0 15px 6px rgba(122, 121, 121, 0.226);
+}
 
 #nav > li > a{
     color: #fff;
