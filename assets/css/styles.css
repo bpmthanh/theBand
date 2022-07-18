@@ -161,13 +161,14 @@ html{
 /*Slider------------------*/
 #slider{
     margin-top: 46.5px;
-    padding-top: 63%;
-    background-image:url('../../img/slider/membertheband.png');
+    padding-top: 50%;
+    background-image:url('../../img/slider/slider3.jpg');
     background-position:center top;
     background-repeat:no-repeat;
     background-size: contain;
     position: relative;
     font-family: 'Segoe UI',Arial,sans-serif; 
+    background-size: 100% 100%;
 }
 
 .slider-background{
@@ -263,7 +264,7 @@ html{
     width: 154px;
     height: 230px;
     border-radius: 4px;
-    object-fit: cover
+    object-fit: cover;
 }
 
 /*Tour section------------------*/
