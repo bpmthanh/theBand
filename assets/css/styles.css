@@ -161,8 +161,8 @@ html{
 /*Slider------------------*/
 #slider{
     margin-top: 46.5px;
-    padding-top: 50%;
-    background-image:url('../../img/slider/slider1.jpg');
+    padding-top: 63%;
+    background-image:url('../../img/slider/membertheband.png');
     background-position:center top;
     background-repeat:no-repeat;
     background-size: contain;
@@ -261,7 +261,9 @@ html{
 
 #content .member-img{
     width: 154px;
+    height: 230px;
     border-radius: 4px;
+    object-fit: cover
 }
 
 /*Tour section------------------*/
