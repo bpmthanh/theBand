@@ -1,4 +1,19 @@
-/*Common*/
+/*KeyFrame*/
+@keyframes Animation{
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+@keyframes modalFadeIn {
+    from{transform: translateY(-100px);}
+    to{transform: translateY(0);}
+}
 
 /* Reset CSS------------------*/
 *{
@@ -167,8 +182,8 @@ html{
     position: relative;
     font-family: 'Segoe UI',Arial,sans-serif; 
     background-size: 100% 100%; 
-    /* background-image:url(../../img/slider/slider3.jpg); */
-    background-image:url(https://bpmthanh.github.io/theBand/img/slider/slider3.jpg)
+    background-image:url(https://bpmthanh.github.io/theBand/img/slider/slider3.jpg);
+    animation: Animation ease-out 4s ;
 }
 
 .slider-background{
@@ -495,11 +510,6 @@ html{
     color: #2196F3;
 }
 
-@keyframes modalFadeIn {
-    from{transform: translateY(-100px);}
-    to{transform: translateY(0);}
-}
-
 /*----------------------------------------------------------*/
 /*Contact------------------*/
 .contact-content{
@@ -584,3 +594,4 @@ html{
 .copyright{
     margin: 15px 0;
 }
+

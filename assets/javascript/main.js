@@ -82,27 +82,56 @@ for(var i=0;i<menuItems.length;i++){
 }
 ;
 
-var index=0;
-function changeBackgroundImg(){
-    // var img=["url(../../img/slider/slider1.jpg)","url(../../img/slider/slider2.jfif)","url(../../img/slider/slider3.jpg)"]
-    var img=["url(https://bpmthanh.github.io/theBand/img/slider/slider1.jpg)","url(https://bpmthanh.github.io/theBand/img/slider/slider2.jfif)","url(https://bpmthanh.github.io/theBand/img/slider/slider3.jpg)"]
+let dynamicStyles = null;
 
-    var slider=document.getElementById("slider");
-    Object.assign(slider.style,{
-    
-    marginTop: '46.5px',
-    paddingTop: '60%',
-    backgroundPosition:'center top',
-    backgroundRepeat:'no-repeat',
-    backgroundSize: 'contain',
-    position: 'relative',
-    fontFamily: '"Segoe UI",Arial,sans-serif', 
-    backgroundSize: '100% 100%', 
-    backgroundImage:img[index]
-    });
-    index++;
-    if(index==3){
-        index=0;
-    }
-}
-setInterval(changeBackgroundImg,2000)
+      function addAnimation(body) {
+        if (!dynamicStyles) {
+          dynamicStyles = document.createElement("style");
+          dynamicStyles.type = "text/css";
+          document.head.appendChild(dynamicStyles);
+        }
+
+        dynamicStyles.sheet.insertRule(body, dynamicStyles.length);
+      }
+
+      addAnimation(`
+      @keyframes Animation{
+ 
+        from {
+            opacity: 1;
+        }
+        
+        to {
+            opacity: 0;
+        }
+
+      }`);
+
+      var index = 0;
+      let slider = document.getElementById("slider");
+      function changeBackgroundImg() {
+        var img = [
+          "url(https://bpmthanh.github.io/theBand/img/slider/slider1.jpg)",
+          "url(https://bpmthanh.github.io/theBand/img/slider/slider2.jfif)",
+          "url(https://bpmthanh.github.io/theBand/img/slider/slider3.jpg)",
+        ];
+
+        Object.assign(slider.style, {
+          marginTop: "46.5px",
+          paddingTop: "60%",
+          backgroundPosition: "center top",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+          position: "relative",
+          fontFamily: '"Segoe UI",Arial,sans-serif',
+          backgroundSize: "100% 100%",
+          backgroundImage: img[index],
+          animation: "Animation ease-out 4s infinite",
+          willChange:'opacity,left' 
+        });
+        index++;
+        if (index == 3) {
+          index = 0;
+        }
+      }
+      setInterval(changeBackgroundImg, 4000);
