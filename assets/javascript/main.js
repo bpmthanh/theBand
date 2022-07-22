@@ -85,9 +85,10 @@ for(var i=0;i<menuItems.length;i++){
 var index=0;
 function changeBackgroundImg(){
     var img=["url(../../img/slider/slider1.jpg)","url(../../img/slider/slider2.jfif)","url(../../img/slider/slider3.jpg)"]
+
     var slider=document.getElementById("slider");
     Object.assign(slider.style,{
-    backgroundImage:img[index],
+    
     marginTop: '46.5px',
     paddingTop: '50%',
     backgroundPosition:'center top',
@@ -96,25 +97,11 @@ function changeBackgroundImg(){
     position: 'relative',
     fontFamily: '"Segoe UI",Arial,sans-serif', 
     backgroundSize: '100% 100%', 
+    backgroundImage:img[index]
     });
     index++;
     if(index==3){
         index=0;
     }
 }
-
-// function defaultBackgroundImg(){
-//     var slider=document.getElementById("slider");
-//     Object.assign(slider.style,{
-//     backgroundImage:"url('../../img/slider/slider3.jpg')",
-//     marginTop: '46.5px',
-//     paddingTop: '50%',
-//     backgroundPosition:'center top',
-//     backgroundRepeat:'no-repeat',
-//     backgroundSize: 'contain',
-//     position: 'relative',
-//     fontFamily: 'Segoe UI,Arial,sans-serif', 
-//     backgroundSize: '100% 100%', 
-// }
-
 setInterval(changeBackgroundImg,2000)
