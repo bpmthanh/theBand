@@ -162,13 +162,13 @@ html{
 #slider{
     margin-top: 46.5px;
     padding-top: 50%;
-    background-image:url('../../img/slider/slider3.jpg');
     background-position:center top;
     background-repeat:no-repeat;
     background-size: contain;
     position: relative;
     font-family: 'Segoe UI',Arial,sans-serif; 
-    background-size: 100% 100%;
+    background-size: 100% 100%; 
+    background-image:url('../../img/slider/slider3.jpg');
 }
 
 .slider-background{
