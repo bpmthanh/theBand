@@ -91,7 +91,7 @@ function changeBackgroundImg(){
     Object.assign(slider.style,{
     
     marginTop: '46.5px',
-    paddingTop: '50%',
+    paddingTop: '60%',
     backgroundPosition:'center top',
     backgroundRepeat:'no-repeat',
     backgroundSize: 'contain',
