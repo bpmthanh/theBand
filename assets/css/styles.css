@@ -168,7 +168,7 @@ html{
     position: relative;
     font-family: 'Segoe UI',Arial,sans-serif; 
     background-size: 100% 100%; 
-    background-image:url('../../img/slider/slider3.jpg');
+    background-image:url(../../img/slider/slider3.jpg);
 }
 
 .slider-background{

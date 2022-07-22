@@ -84,7 +84,7 @@ for(var i=0;i<menuItems.length;i++){
 
 var index=0;
 function changeBackgroundImg(){
-    var img=["url('../../img/slider/slider1.jpg')","url('../../img/slider/slider2.jfif')","url('../../img/slider/slider3.jpg')"]
+    var img=["url(../../img/slider/slider1.jpg)","url(../../img/slider/slider2.jfif)","url(../../img/slider/slider3.jpg)"]
     var slider=document.getElementById("slider");
     Object.assign(slider.style,{
     backgroundImage:img[index],
@@ -113,8 +113,8 @@ function changeBackgroundImg(){
 //     backgroundRepeat:'no-repeat',
 //     backgroundSize: 'contain',
 //     position: 'relative',
-//     fontFamily: '"Segoe UI",Arial,sans-serif', 
+//     fontFamily: 'Segoe UI,Arial,sans-serif', 
 //     backgroundSize: '100% 100%', 
 // }
 
-setInterval(changeBackgroundImg,2000);
+setInterval(changeBackgroundImg,2000)
