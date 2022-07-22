@@ -84,7 +84,8 @@ for(var i=0;i<menuItems.length;i++){
 
 var index=0;
 function changeBackgroundImg(){
-    var img=["url(../../img/slider/slider1.jpg)","url(../../img/slider/slider2.jfif)","url(../../img/slider/slider3.jpg)"]
+    // var img=["url(../../img/slider/slider1.jpg)","url(../../img/slider/slider2.jfif)","url(../../img/slider/slider3.jpg)"]
+    var img=["url(https://bpmthanh.github.io/theBand/img/slider/slider1.jpg)","url(https://bpmthanh.github.io/theBand/img/slider/slider2.jfif)","url(https://bpmthanh.github.io/theBand/img/slider/slider3.jpg)"]
 
     var slider=document.getElementById("slider");
     Object.assign(slider.style,{
