@@ -126,7 +126,7 @@ let dynamicStyles = null;
           fontFamily: '"Segoe UI",Arial,sans-serif',
           backgroundSize: "100% 100%",
           backgroundImage: img[index],  
-          WebkitAnimation: 'Animation 2s ease-in-out 2s infinite alternate',
+          WebkitAnimation: 'Animation 2s linear 2s infinite alternate',
           willChange:'opacity' 
         });
         index++;
