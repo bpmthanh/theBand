@@ -118,16 +118,16 @@ let dynamicStyles = null;
 
         Object.assign(slider.style, {
           marginTop: "46.5px",
-          paddingTop: "60%",
+          paddingTop: "50%",
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
           position: "relative",
           fontFamily: '"Segoe UI",Arial,sans-serif',
           backgroundSize: "100% 100%",
-          backgroundImage: img[index],
-          animation: "Animation ease-out 4s infinite",
-          willChange:'opacity,left' 
+          backgroundImage: img[index],  
+          WebkitAnimation: 'Animation 2s ease-in-out 2s infinite alternate',
+          willChange:'opacity' 
         });
         index++;
         if (index == 3) {

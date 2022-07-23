@@ -176,14 +176,14 @@ html{
 /*Slider------------------*/
 #slider{
     margin-top: 46.5px;
-    padding-top: 60%;
+    padding-top: 50%;
     background-position:center top;
     background-repeat:no-repeat;
     position: relative;
     font-family: 'Segoe UI',Arial,sans-serif; 
     background-size: 100% 100%; 
     background-image:url(https://bpmthanh.github.io/theBand/img/slider/slider3.jpg);
-    animation: Animation ease-out 4s ;
+    animation: Animation 2s ease-in-out 2.1s;
 }
 
 .slider-background{
